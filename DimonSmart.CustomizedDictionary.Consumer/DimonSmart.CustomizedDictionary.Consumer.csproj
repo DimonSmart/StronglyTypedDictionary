@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+
+	<ItemGroup>
+		<AdditionalFiles Include="CustomerDictionary.csv" />
+	</ItemGroup>
+   
+	<ItemGroup>
+		<ProjectReference Include="..\DimonSmart.CustomizedDictionary.Generator\DimonSmart.CustomizedDictionary.Generator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+	</ItemGroup>
+
+</Project>
