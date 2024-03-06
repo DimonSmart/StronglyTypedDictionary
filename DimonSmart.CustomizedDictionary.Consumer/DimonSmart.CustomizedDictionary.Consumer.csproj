@@ -13,7 +13,7 @@
     </PropertyGroup>
 
 	<ItemGroup>
-		<AdditionalFiles Include="CustomerDictionary.csv" />
+		<AdditionalFiles Include="CustomerDictionary.dictionary" />
 	</ItemGroup>
    
 	<ItemGroup>
