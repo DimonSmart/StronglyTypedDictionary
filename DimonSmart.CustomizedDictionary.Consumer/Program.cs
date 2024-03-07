@@ -4,8 +4,7 @@ public static class Program
 {
     public static void Main()
     {
-      //  System.Console.WriteLine("Hello, World!");
-      //  var d = new CustomerDictionary();
-      //  d.Print();
+      var d = new IpMap();
+      d.Add("localhost", 10);
     }
 }

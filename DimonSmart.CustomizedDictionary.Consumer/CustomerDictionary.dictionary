@@ -1,1 +1,1 @@
-Network.IpMap<string IPAddress, int Port(Ports)>
+DimonSmart.CustomizedDictionary.Consumer.IpMap<string IPAddress, int Port(Ports)>
