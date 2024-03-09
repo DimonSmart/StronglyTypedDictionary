@@ -12,12 +12,12 @@
         <LangVersion>latest</LangVersion>
     </PropertyGroup>
 
-	<ItemGroup>
-		<AdditionalFiles Include="CustomerDictionary.dictionary" />
-	</ItemGroup>
+    <ItemGroup>
+        <AdditionalFiles Include="ErrorNumberToMessageMapping.dictionary" />
+    </ItemGroup>
    
-	<ItemGroup>
-		<ProjectReference Include="..\DimonSmart.CustomizedDictionary.Generator\DimonSmart.CustomizedDictionary.Generator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
-	</ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\DimonSmart.CustomizedDictionary.Generator\DimonSmart.CustomizedDictionary.Generator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+    </ItemGroup>
 
 </Project>

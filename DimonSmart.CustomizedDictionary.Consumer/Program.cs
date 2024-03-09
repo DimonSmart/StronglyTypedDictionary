@@ -4,7 +4,15 @@ public static class Program
 {
     public static void Main()
     {
-      var d = new IpMap();
-      d.Add("localhost", 10);
+      var d = new ErrorNumberToMessageMapping();
+      d.Add(404, "Something not found");
+      if (!d.ContainsErrorCode(42))
+          Console.WriteLine("May be this is not an error at all");
+
+      if (d.TryGetMessage(404, out var errorMessage))
+          Console.WriteLine($"404: {errorMessage}");
+
+              // d.GetMessageOrDefault(43);
+
     }
 }
