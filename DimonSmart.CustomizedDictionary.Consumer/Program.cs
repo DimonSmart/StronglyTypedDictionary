@@ -12,7 +12,6 @@ public static class Program
         if (d.TryGetMessage(404, out var errorMessage))
             Console.WriteLine($"404: {errorMessage}");
 
-        // d.GetMessageOrDefault(43);
-
+        var messageFor43 = d.GetMessageOrDefault(43, "WOW");
     }
 }
