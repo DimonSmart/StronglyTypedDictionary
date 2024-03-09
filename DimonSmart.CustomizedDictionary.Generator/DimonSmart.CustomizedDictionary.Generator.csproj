@@ -7,14 +7,14 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <IncludeBuildOutput>true</IncludeBuildOutput>
         <PackageId>DimonSmart.CustomizedDictionary</PackageId>
-	<Authors>Dmitry Dorogoy</Authors>
-	<Company>DimonSmart</Company>
+    <Authors>Dmitry Dorogoy</Authors>
+    <Company>DimonSmart</Company>
         <Description>Dictionary wrapper with ability to customize 'key' and 'value' property names!</Description>
-	<RepositoryUrl>https://github.com/DimonSmart/CustomizedDictionary</RepositoryUrl>
-	<RepositoryType>git</RepositoryType>
-	<PackageLicenseExpression>0BSD</PackageLicenseExpression>
-	<Title>Customized dictionary</Title>
-	<Copyright>FREE</Copyright>
+    <RepositoryUrl>https://github.com/DimonSmart/CustomizedDictionary</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>0BSD</PackageLicenseExpression>
+    <Title>Customized dictionary</Title>
+    <Copyright>FREE</Copyright>
     </PropertyGroup>
 
     <PropertyGroup>
