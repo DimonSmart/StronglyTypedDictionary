@@ -7,14 +7,15 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <IncludeBuildOutput>true</IncludeBuildOutput>
         <PackageId>DimonSmart.CustomizedDictionary</PackageId>
-    <Authors>Dmitry Dorogoy</Authors>
-    <Company>DimonSmart</Company>
+        <Authors>Dmitry Dorogoy</Authors>
+        <Company>DimonSmart</Company>
         <Description>Dictionary wrapper with ability to customize 'key' and 'value' property names!</Description>
-    <RepositoryUrl>https://github.com/DimonSmart/CustomizedDictionary</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-    <PackageLicenseExpression>0BSD</PackageLicenseExpression>
-    <Title>Customized dictionary</Title>
-    <Copyright>FREE</Copyright>
+        <RepositoryUrl>https://github.com/DimonSmart/CustomizedDictionary</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageLicenseExpression>0BSD</PackageLicenseExpression>
+        <Title>Customized dictionary</Title>
+        <Copyright>FREE</Copyright>
+        <PackageReadmeFile>README.md</PackageReadmeFile>   
     </PropertyGroup>
 
     <PropertyGroup>
@@ -26,6 +27,14 @@
       <!-- Package the generator in the analyzer directory of the nuget package -->
       <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
     </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\README.md">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+    </ItemGroup>
+
 
     <ItemGroup>
         <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.9.2" PrivateAssets="all" />
