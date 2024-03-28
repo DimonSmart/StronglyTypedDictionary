@@ -21,7 +21,7 @@ namespace DimonSmart.StronglyTypedDictionary.Generator
         {
             var myFiles = context
                 .AdditionalFiles
-                .Where(at => at.Path.EndsWith(".dictionary"));
+                .Where(at => at.Path.EndsWith(".StronglyTypedDictionary"));
 
             // if (!Debugger.IsAttached)
             //    Debugger.Launch();
