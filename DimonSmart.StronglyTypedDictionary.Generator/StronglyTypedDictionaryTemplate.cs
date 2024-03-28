@@ -1,6 +1,6 @@
-﻿namespace DimonSmart.CustomizedDictionary.Generator;
+﻿namespace DimonSmart.StronglyTypedDictionary.Generator;
 
-public static class CustomizedDictionaryTemplate
+public static class StronglyTypedDictionaryTemplate
 {
     public static string DictionaryTemplate = """
           namespace @@NameSpace@@

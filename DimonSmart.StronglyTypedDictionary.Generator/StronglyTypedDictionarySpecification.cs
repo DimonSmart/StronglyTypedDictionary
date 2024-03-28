@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 
-namespace DimonSmart.CustomizedDictionary.Generator;
+namespace DimonSmart.StronglyTypedDictionary.Generator;
 
-public class CustomizedDictionarySpecification
+public class StronglyTypedDictionarySpecification
 {
     public string Namespace { get; private set; }
     public string DictionaryName { get; private set; }
@@ -15,7 +15,7 @@ public class CustomizedDictionarySpecification
     public string ValueNamePlural { get; private set; }
 
     // Constructor that parses the input string with pluralization
-    public CustomizedDictionarySpecification(string input)
+    public StronglyTypedDictionarySpecification(string input)
     {
         var regex = new Regex(@"^(?<Namespace>.+?)\.(?<DictionaryName>\w+)<(?<KeyType>\w+)\s+(?<KeyName>\w+)(\((?<KeyNamePlural>\w+)\))?,\s*(?<ValueType>\w+)\s+(?<ValueName>\w+)(\((?<ValueNamePlural>\w+)\))?>$");
         var match = regex.Match(input);
@@ -37,9 +37,6 @@ public class CustomizedDictionarySpecification
         ValueNamePlural = match.Groups["ValueNamePlural"].Success ? match.Groups["ValueNamePlural"].Value : GetPluralForm(ValueName);
     }
 
-    private string GetPluralForm(string singular)
-    {
-        return singular.EndsWith("s", StringComparison.OrdinalIgnoreCase) ? singular + "es" : singular + "s";
-    }
-
+    private static string GetPluralForm(string singular) =>
+        singular.EndsWith("s", StringComparison.OrdinalIgnoreCase) ? singular + "es" : singular + "s";
 }

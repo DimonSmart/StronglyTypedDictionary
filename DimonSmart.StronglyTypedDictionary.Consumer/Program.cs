@@ -1,4 +1,4 @@
-﻿namespace DimonSmart.CustomizedDictionary.Consumer;
+﻿namespace DimonSmart.StronglyTypedDictionary.Consumer;
 
 public static class Program
 {

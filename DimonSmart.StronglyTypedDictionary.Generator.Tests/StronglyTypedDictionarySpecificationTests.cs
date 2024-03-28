@@ -1,6 +1,6 @@
-namespace DimonSmart.CustomizedDictionary.Generator.Tests
+namespace DimonSmart.StronglyTypedDictionary.Generator.Tests
 {
-    public class CustomizedDictionarySpecificationTests
+    public class StronglyTypedDictionarySpecificationTests
     {
         [Theory]
         [InlineData("MyNamespace.MyDictionary<int Key, string Value>", "MyNamespace", "MyDictionary", "int", "Key", "Keys", "string", "Value", "Values")]
@@ -13,7 +13,7 @@ namespace DimonSmart.CustomizedDictionary.Generator.Tests
         [InlineData("HR.EmployeeMap<int EmployeeNumber, string Department(Departments)>", "HR", "EmployeeMap", "int", "EmployeeNumber", "EmployeeNumbers", "string", "Department", "Departments")]
         [InlineData("Finance.Account<int AccountId, double Balance>", "Finance", "Account", "int", "AccountId", "AccountIds", "double", "Balance", "Balances")]
         [InlineData("Communication.MessageMap<Guid MessageId, string Content(Contents)>", "Communication", "MessageMap", "Guid", "MessageId", "MessageIds", "string", "Content", "Contents")]
-        public void CustomizedDictionarySpecification_ParseInputString_CorrectlySetsProperties(
+        public void StronglyTypedDictionarySpecification_ParseInputString_CorrectlySetsProperties(
             string input,
             string expectedNamespace,
             string expectedDictionaryName,
@@ -25,7 +25,7 @@ namespace DimonSmart.CustomizedDictionary.Generator.Tests
             string expectedValueNamePlural)
         {
             // Act
-            var spec = new CustomizedDictionarySpecification(input);
+            var spec = new StronglyTypedDictionarySpecification(input);
 
             // Assert
             Assert.Equal(expectedNamespace, spec.Namespace);

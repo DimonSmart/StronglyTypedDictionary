@@ -6,11 +6,11 @@
         <LangVersion>latest</LangVersion>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <IncludeBuildOutput>true</IncludeBuildOutput>
-        <PackageId>DimonSmart.CustomizedDictionary</PackageId>
+        <PackageId>DimonSmart.StronglyTypedDictionary</PackageId>
         <Authors>Dmitry Dorogoy</Authors>
         <Company>DimonSmart</Company>
         <Description>Dictionary wrapper with ability to customize 'key' and 'value' property names!</Description>
-        <RepositoryUrl>https://github.com/DimonSmart/CustomizedDictionary</RepositoryUrl>
+        <RepositoryUrl>https://github.com/DimonSmart/StronglyTypedDictionary</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageLicenseExpression>0BSD</PackageLicenseExpression>
         <Title>Customized dictionary</Title>

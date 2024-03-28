@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DimonSmart.CustomizedDictionary.Generator\DimonSmart.CustomizedDictionary.Generator.csproj" />
+    <ProjectReference Include="..\DimonSmart.StronglyTypedDictionary.Generator\DimonSmart.StronglyTypedDictionary.Generator.csproj" />
   </ItemGroup>
 
   <ItemGroup>

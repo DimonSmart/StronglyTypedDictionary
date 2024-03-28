@@ -1,10 +1,10 @@
-# CustomizedDictionary - Strongly Typed Dictionary Generator for .NET
+# StronglyTypedDictionary - Strongly Typed Dictionary Generator for .NET
 
 ## Overview
 
 In modern software development, strongly typed identifiers (IDs) have become increasingly popular, offering an enhanced level of type safety and reducing the risk of misusing IDs of different entities. However, when working with dictionaries that map these IDs to corresponding entities or attributes, developers often face limitations due to the generic "key-value" terminology used by traditional dictionaries. This can lead to confusion, especially when handling multiple dictionaries within the same context, as each dictionary's purpose and the nature of its keys and values become obscured.
 
-CustomizedDictionary aims to bridge this gap by providing a powerful code generation tool that allows developers to define dictionaries with domain-specific naming conventions for both keys and values. This approach not only improves code readability and maintainability but also aligns dictionary usage more closely with the domain model, ensuring a more intuitive development experience.
+StronglyTypedDictionary aims to bridge this gap by providing a powerful code generation tool that allows developers to define dictionaries with domain-specific naming conventions for both keys and values. This approach not only improves code readability and maintainability but also aligns dictionary usage more closely with the domain model, ensuring a more intuitive development experience.
 
 ## Features
 
@@ -17,10 +17,10 @@ CustomizedDictionary aims to bridge this gap by providing a powerful code genera
 
 ### Installation
 
-To get started with CustomizedDictionary, add it to your project via NuGet:
+To get started with StronglyTypedDictionary, add it to your project via NuGet:
 
 ```powershell
-Install-Package CustomizedDictionary
+Install-Package StronglyTypedDictionary
 ```
 
 ### Defining a Custom Dictionary
@@ -36,10 +36,10 @@ Namespace.DictionaryName<KeyType KeyName(KeyNamePlural), ValueType ValueName(Val
 For example:
 
 ```
-MyProject.CustomizedDictionary.ErrorNumberToMessageMapping<int errorCode(ErrorCodes), string message(Messages)>
+MyProject.StronglyTypedDictionary.ErrorNumberToMessageMapping<int errorCode(ErrorCodes), string message(Messages)>
 ```
 
-This definition will be parsed by the CustomizedDictionary code generator to create a strongly typed dictionary class tailored to your specifications.
+This definition will be parsed by the StronglyTypedDictionary code generator to create a strongly typed dictionary class tailored to your specifications.
 
 ### Usage
 
@@ -61,7 +61,7 @@ public static void Main()
 }
 ```
 
-## Why CustomizedDictionary?
+## Why StronglyTypedDictionary?
 
 - **Domain-Specific Semantics**: Leverage domain-specific terminology for greater clarity and better alignment with business logic.
 - **Improved Readability**: Enhance code readability with intuitive naming, making it easier to understand and maintain.
@@ -69,8 +69,8 @@ public static void Main()
 
 ## Additional Information
 
-While CustomizedDictionary draws inspiration from the concept of strongly typed IDs, it focuses on improving dictionary usage by allowing custom naming for keys and values. This approach shares the ideology of enhancing code clarity and type safety, demonstrating its utility across various applications.
+While StronglyTypedDictionary draws inspiration from the concept of strongly typed IDs, it focuses on improving dictionary usage by allowing custom naming for keys and values. This approach shares the ideology of enhancing code clarity and type safety, demonstrating its utility across various applications.
 
-For more detailed documentation, usage examples, and advanced features, please refer to the [CustomizedDictionary Documentation](#).
+For more detailed documentation, usage examples, and advanced features, please refer to the [StronglyTypedDictionary Documentation](#).
 
-Embark on a journey towards more expressive, maintainable, and intuitive code with CustomizedDictionary.
+Embark on a journey towards more expressive, maintainable, and intuitive code with StronglyTypedDictionary.

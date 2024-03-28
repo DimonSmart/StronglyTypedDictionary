@@ -1,0 +1,1 @@
+DimonSmart.StronglyTypedDictionary.Consumer.ErrorNumberToMessageMapping<int errorCode, string message>
