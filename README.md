@@ -67,6 +67,34 @@ public static void Main()
 - **Improved Readability**: Enhance code readability with intuitive naming, making it easier to understand and maintain.
 - **Type Safety**: Benefit from the strong typing system of C#, reducing the risk of errors related to key and value misuse.
 
+## Extended Use Cases Beyond Simple Mapping
+
+The StronglyTypedDictionary extends the functionality of traditional dictionaries by introducing specific suffixes and associated methods that enhance code readability and domain-specific utility. Below is a table illustrating possible suffixes and the custom methods that differentiate these from a standard dictionary:
+
+| Suffix        | Description                          | Custom Methods                     | Example Class                       | Key Method Example                    |
+|---------------|--------------------------------------|------------------------------------|-------------------------------------|---------------------------------------|
+| `Cache`       | Storing results for quick retrieval. | `ContainsKey`, `GetResult`         | `ResultsCache<int, Result>`         | `if (resultsCache.ContainsQuery(id))` |
+| `Index`       | Accelerating access to attributes.   | `ContainsAttribute`, `GetObjectsForAttribute` | `AttributeIndex<string, List<object>>` | `if (attributeIndex.ContainsAttribute(attrName))` |
+| `State`       | Storing session or state data.       | `ContainsSession`, `GetSessionData`| `SessionState<string, SessionData>` | `if (sessionState.ContainsSession(sessionId))` |
+| `Pool`        | Managing a pool of resources.        | `IsResourceAvailable`, `GetResource` | `ResourcePool<int, Resource>`       | `if (resourcePool.IsResourceAvailable(resourceId))` |
+| `Log`         | Tracking changes or activity.        | `GetChangesForObject`              | `ChangeLog<int, List<Change>>`      | `changeLog.GetChangesForObject(objectId)` |
+| `Registry`    | Handling event registrations.        | `Register`, `GetHandlerForEvent`   | `EventHandlers<string, Action<Event>>` | `eventHandlers.GetHandlerForEvent(eventType)` |
+
+### Example Usage: `Cache`
+
+The `ResultsCache` class is designed to store the results of expensive operations:
+
+```csharp
+var resultsCache = new ResultsCache<int, Result>();
+if (!resultsCache.ContainsQuery(queryId)) {
+    var result = PerformExpensiveOperation(queryId);
+    resultsCache.Add(queryId, result);
+}
+var cachedResult = resultsCache.GetResult(queryId);
+
+
+
+
 ## Additional Information
 
 While StronglyTypedDictionary draws inspiration from the concept of strongly typed IDs, it focuses on improving dictionary usage by allowing custom naming for keys and values. This approach shares the ideology of enhancing code clarity and type safety, demonstrating its utility across various applications.
