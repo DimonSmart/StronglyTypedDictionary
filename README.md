@@ -99,6 +99,4 @@ var cachedResult = resultsCache.GetResult(queryId);
 
 While StronglyTypedDictionary draws inspiration from the concept of strongly typed IDs, it focuses on improving dictionary usage by allowing custom naming for keys and values. This approach shares the ideology of enhancing code clarity and type safety, demonstrating its utility across various applications.
 
-For more detailed documentation, usage examples, and advanced features, please refer to the [StronglyTypedDictionary Documentation](#).
-
 Embark on a journey towards more expressive, maintainable, and intuitive code with StronglyTypedDictionary.
