@@ -24,7 +24,7 @@ public static class StronglyTypedDictionaryTemplate
           
                   public @@ValueType@@ this[@@KeyType@@ @@KeyName@@]
                   {
-                      get => _items.TryGetValue(@@KeyName@@, out var value) ? value : default;
+                      get => _items[@@KeyName@@];
                       set => _items[@@KeyName@@] = value;
                   }
           
