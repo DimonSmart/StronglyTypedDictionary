@@ -91,7 +91,7 @@ if (!resultsCache.ContainsQuery(queryId)) {
     resultsCache.Add(queryId, result);
 }
 var cachedResult = resultsCache.GetResult(queryId);
-
+```
 
 
 
